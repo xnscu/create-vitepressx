@@ -43,7 +43,7 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           enablement: true
-          
+
       - name: Install dependencies
         run: npm install --no-package-lock # 使用 npm 且不检查 lock 文件
 
@@ -53,7 +53,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: dist
 
   # 部署工作
   deploy:

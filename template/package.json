@@ -1,7 +1,7 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "preb": "npm --no-git-tag-version version minor; npm run build",
+    "preb": "npm --no-git-tag-version version minor",
     "b": "npm run push",
     "commit": "git add . && git commit -am ",
     "c": "npm run commit",
