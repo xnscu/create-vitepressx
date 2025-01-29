@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "vitepressx book"
+  name: "VitePressX book"
   text: "my greate book"
   tagline: site created by create-vitepressx
   actions:

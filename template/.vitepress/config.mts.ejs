@@ -9,7 +9,7 @@ import mathjax3 from "markdown-it-mathjax3";
 export default defineConfig({
   outDir: "dist",
   base: process.env.GITHUB_ACTIONS ? "/<%= projectName %>/" : "/",
-  title: "VitePressX",
+  title: process.env.LOGO || "VitePressX",
   markdown: {
     math: true,
     config(md) {
@@ -103,7 +103,7 @@ export default defineConfig({
       prefixSeparator: ".",
       excludeFiles: ["README.md"],
       excludeFilesByFrontmatterFieldName: "exclude",
-      excludeFolders: ["bin"],
+      excludePattern: ["bin/"],
       includeDotFiles: false,
       includeRootIndexFile: false,
       includeFolderIndexFile: false,
