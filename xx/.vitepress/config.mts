@@ -8,7 +8,7 @@ import mathjax3 from "markdown-it-mathjax3";
 // https://github.com/vuejs/vitepress/blob/main/docs/.vitepress/config/zh.ts
 export default defineConfig({
   outDir: "dist",
-  base: process.env.GITHUB_ACTIONS ? "/<%= projectName %>/" : "/",
+  base: process.env.GITHUB_ACTIONS ? "/xx/" : "/",
   title: "VitePressX",
   markdown: {
     math: true,
@@ -52,7 +52,7 @@ export default defineConfig({
       next: "下一页",
     },
     // editLink: {
-    // pattern: "https://github.com/xnscu/<%= projectName %>/edit/master/:path",
+    // pattern: "https://github.com/xnscu/xx/edit/master/:path",
     // text: "编辑",
     // },
     lastUpdated: {
@@ -70,7 +70,7 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-    // socialLinks: [{ icon: "github", link: "https://github.com/xnscu/<%= projectName %>" }],
+    // socialLinks: [{ icon: "github", link: "https://github.com/xnscu/xx" }],
     sidebar: generateSidebar({
       /*
        * For detailed instructions, see the links below:
