@@ -1,10 +1,10 @@
 {
   "name": "create-vitepressx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Start an opinioned vitepress project with vitepress-sidebars and giscus included",
   "type": "module",
   "bin": {
-    "create": "outfile.cjs"
+    "create-vitepressx": "outfile.cjs"
   },
   "files": [
     ".env",
